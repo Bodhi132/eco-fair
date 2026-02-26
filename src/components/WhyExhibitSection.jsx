@@ -1,62 +1,62 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const reasons = [
-    { title: "Direct HNI Access", desc: "Interact face-to-face with Pune's premier shoppers, tastemakers, and lifestyle enthusiasts in a highly curated environment.", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" },
-    { title: "Elite Positioning", desc: "Elevate your brand perception by aligning with a curated luxury showcase alongside top-tier national designers.", icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" },
-    { title: "B2B Expansion", desc: "Connect with key distributors, boutique owners, and industry influencers to scale your brand footprint.", icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" },
-    { title: "Aggressive PR", desc: "Benefit from an extensive PR campaign including print media, outdoor billboards, and targeted digital influencer marketing.", icon: "M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" },
+    {
+        title: "Curated Audience",
+        desc: "Engage with 1000+ pre-qualified HNIs and conscious luxury consumers actively seeking premium ethical alternatives."
+    },
+    {
+        title: "Exclusive Positioning",
+        desc: "Exhibit alongside a handpicked selection of pioneering brands, ensuring your collection commands attention in an uncrowded environment."
+    },
+    {
+        title: "High-Intent Buyers",
+        desc: "Our attendees are not merely browsing; they are decisive industry leaders, connoisseurs, and early adopters of sustainable luxury."
+    },
+    {
+        title: "Strategic Visibility",
+        desc: "Benefit from our rigorous PR strategy, influencer collaborations, and elite marketing campaigns explicitly targeting high-net-worth demographics."
+    },
+    {
+        title: "Sustainable Network",
+        desc: "Immerse your brand in an influential ecosystem of advocates, founders, and global pioneers shaping the future of conscious fashion."
+    },
+    {
+        title: "Unparalleled ROI",
+        desc: "Strictly limited stall availability eradicates market noise, guaranteeing maximum impact, networking, and returns for your brand story."
+    }
 ];
 
 export default function WhyExhibitSection() {
     return (
         <section
             id="why-exhibit"
-            className="relative w-full py-32 bg-[#1A362D] overflow-hidden"
+            className="relative w-full py-32 bg-[#050505] overflow-hidden border-t border-b border-[#2A2A2A]"
         >
-            {/* Retro noise overlay */}
-            <div className="absolute inset-0 z-20 pointer-events-none opacity-[0.25] mix-blend-color-burn bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPjxmaWx0ZXIgaWQ9J24nPjxmZVR1cmJ1bGVuY2UgdHlwZT0nZnJhY3RhbE5vaXNlJyBiYXNlRnJlcXVlbmN5PScwLjknIG51bU9jdGF2ZXM9JzMnLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHY9JzAuMScvPjwvc3ZnPg==')]"></div>
-
-            {/* Background Image mapped to top right */}
-            <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-10 pointer-events-none z-0 mix-blend-luminosity">
-                <Image
-                    src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Premium structural background"
-                    fill
-                    className="object-cover sepia-[0.5]"
-                />
-                {/* Fade gradient so it blends nicely into the deep green */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#1A362D] to-transparent"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-[#1A362D] to-transparent"></div>
-            </div>
-
-            {/* Subtle organic gradient background */}
-            <div className="absolute top-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#DDA76A] to-transparent opacity-80"></div>
-
-            <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
-                className="absolute -top-[50%] -right-[20%] w-[100vw] h-[100vw] bg-[conic-gradient(at_center,_var(--tw-gradient-stops))] from-[#D15C42]/10 via-[#1A362D]/10 to-[#DDA76A]/10 blur-[120px] pointer-events-none z-0"
-            />
+            {/* Subtle background glow effect to make it feel premium */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#C19B6C] opacity-[0.02] blur-[120px] rounded-full pointer-events-none"></div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-6 md:gap-8">
+                {/* Section Header */}
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-24 gap-10">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1] }}
                     >
-                        <span className="text-[#DDA76A] font-bold tracking-[0.3em] text-[10px] sm:text-xs uppercase mb-3 sm:mb-4 flex items-center">
-                            <span className="w-6 sm:w-8 h-[2px] bg-[#DDA76A] mr-3 sm:mr-4"></span>
-                            Opportunities
-                        </span>
-                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-[#F5F2EA] tracking-tight leading-tight">
-                            Why Exhibit <br />
-                            <span className="italic font-light text-[#D15C42]">With Us?</span>
+                        <div className="flex items-center mb-6 space-x-4">
+                            <span className="w-12 h-[1px] bg-[#C19B6C]"></span>
+                            <span className="text-[#C19B6C] font-medium tracking-[0.3em] text-[10px] sm:text-xs uppercase">
+                                Partnership value
+                            </span>
+                        </div>
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-[#FAFAFA] tracking-tight leading-[1.1]">
+                            The Exhibition <br />
+                            <span className="italic font-light text-[#555555]">Advantage.</span>
                         </h2>
                     </motion.div>
 
@@ -64,73 +64,93 @@ export default function WhyExhibitSection() {
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                        className="max-w-sm"
+                        transition={{ duration: 1.2, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
+                        className="max-w-md"
                     >
-                        <p className="text-[#F5F2EA]/80 font-medium text-sm lg:text-base leading-relaxed">
-                            Partnering with Eco Fair guarantees unparalleled visibility. We do not just sell space; we engineer environments where discerning buyers meet extraordinary brands.
+                        <p className="text-[#D1D1D1] font-light text-sm lg:text-base leading-relaxed border-l border-[#2A2A2A] pl-6 py-2">
+                            Partnering with Eco Fair guarantees unparalleled market placement. We engineer bespoke environments where discerning buyers meet extraordinary architectural precision in brand curation.
                         </p>
                     </motion.div>
                 </div>
 
-                {/* Vintage Feature Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Highly Designed Feature Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     {reasons.map((reason, idx) => (
                         <motion.div
                             key={idx}
-                            className="group relative bg-[#F5F2EA] p-12 overflow-hidden border-[3px] border-[#1A362D] transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(209,92,66,1)] hover:shadow-[12px_12px_0px_0px_rgba(221,167,106,1)] hover:-translate-y-2 hover:-translate-x-2"
-                            initial={{ opacity: 0, y: 30 }}
+                            className="group relative bg-[#0A0A0A] border border-[#2A2A2A] p-8 md:p-10 overflow-hidden cursor-default transition-transform duration-[1s] hover:-translate-y-2"
+                            initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8, delay: idx * 0.15 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 1, delay: idx * 0.15, ease: [0.25, 1, 0.5, 1] }}
                         >
-                            {/* Vintage overlay corners */}
-                            <div className="absolute top-2 left-2 w-4 h-4 border-t-[3px] border-l-[3px] border-[#1A362D]"></div>
-                            <div className="absolute bottom-2 right-2 w-4 h-4 border-b-[3px] border-r-[3px] border-[#1A362D]"></div>
+                            {/* Animated borders on hover */}
+                            <div className="absolute top-0 left-0 w-0 h-[1px] bg-[#C19B6C] group-hover:w-full transition-all duration-700 ease-[0.25,1,0.5,1]"></div>
+                            <div className="absolute bottom-0 right-0 w-0 h-[1px] bg-[#C19B6C] group-hover:w-full transition-all duration-700 ease-[0.25,1,0.5,1]"></div>
 
                             <div className="relative z-10 flex flex-col h-full">
-                                <div className="w-16 h-16 rounded-full bg-[#E8E2D2] flex items-center justify-center border-[3px] border-[#1A362D] mb-8 shadow-inner">
-                                    <svg className="w-7 h-7 text-[#D15C42]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={reason.icon}></path></svg>
+                                <div className="mb-12 flex justify-between items-start">
+                                    <span className="text-4xl font-serif italic font-light text-[#2A2A2A] group-hover:text-[#FAFAFA] transition-colors duration-700">
+                                        0{idx + 1}
+                                    </span>
+                                    {/* Minimalist dot indicator */}
+                                    <div className="w-1.5 h-1.5 rounded-full bg-[#2A2A2A] group-hover:bg-[#C19B6C] transition-colors duration-700 mt-3"></div>
                                 </div>
-                                <div>
-                                    <h3 className="text-3xl font-serif text-[#1A362D] mb-4">{reason.title}</h3>
-                                    <p className="text-[#1A362D]/80 leading-relaxed font-medium text-sm">{reason.desc}</p>
+
+                                <div className="mt-auto">
+                                    <h3 className="text-2xl font-serif text-[#FAFAFA] mb-4 group-hover:text-[#C19B6C] transition-colors duration-700 tracking-tight">
+                                        {reason.title}
+                                    </h3>
+                                    <p className="text-[#D1D1D1]/70 group-hover:text-[#D1D1D1] font-light leading-relaxed text-sm transition-colors duration-700">
+                                        {reason.desc}
+                                    </p>
                                 </div>
                             </div>
+
+                            {/* Hover background gradient shift */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#C19B6C]/0 to-[#C19B6C]/[0.03] opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0"></div>
                         </motion.div>
                     ))}
                 </div>
 
-                {/* Bottom Metrics Bar with Vintage Layout */}
+                {/* Editorial Bottom Metrics Bar */}
                 <motion.div
-                    className="mt-16 sm:mt-24 grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-8 border-y-[3px] border-[#DDA76A]/40 py-10 sm:py-16 relative"
-                    initial={{ opacity: 0, y: 30 }}
+                    className="mt-32 relative"
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
+                    transition={{ duration: 1.2, delay: 0.4, ease: [0.25, 1, 0.5, 1] }}
                 >
-                    <div className="absolute top-0 left-1/3 w-[3px] h-full bg-[#DDA76A]/40 hidden md:block"></div>
-                    <div className="absolute top-0 left-2/3 w-[3px] h-full bg-[#DDA76A]/40 hidden md:block"></div>
+                    <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#2A2A2A] to-transparent"></div>
 
-                    {[
-                        { val: "100+", label: "Premium Stalls", sub: "Handpicked brands" },
-                        { val: "10k+", label: "Sq. Ft. Venue", sub: "Impeccable space" },
-                        { val: "50+", label: "Media Partners", sub: "Maximum reach" },
-                    ].map((metric, i) => (
-                        <motion.div
-                            key={i}
-                            className={`text-center group relative ${i !== 2 ? 'pb-8 border-b border-[#DDA76A]/20 md:border-b-0 md:pb-0' : ''}`}
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                        >
-                            <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-[#F5F2EA] mb-2 sm:mb-3 group-hover:text-[#D15C42] transition-colors duration-300">{metric.val}</div>
-                            <div className="text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[#DDA76A] font-bold mb-1 sm:mb-2">{metric.label}</div>
-                            <div className="text-xs sm:text-sm text-[#E8E2D2]/60 font-medium italic">{metric.sub}</div>
-                        </motion.div>
-                    ))}
+                    <div className="grid grid-cols-1 md:grid-cols-3 pt-20 pb-10 gap-16 md:gap-0">
+                        {[
+                            { val: "27", label: "Selected Exhibitors", sub: "Curated Brands" },
+                            { val: "10k+", label: "Sq. Ft. Venue", sub: "Premium Space" },
+                            { val: "50+", label: "Media Partners", sub: "Global Reach" },
+                        ].map((metric, i) => (
+                            <motion.div
+                                key={i}
+                                className={`flex flex-col items-center justify-center relative group ${i !== 2 ? 'md:border-r border-[#2A2A2A]' : ''}`}
+                                whileHover={{ scale: 1.05 }}
+                                transition={{ duration: 0.5 }}
+                            >
+                                <div className="text-6xl md:text-7xl lg:text-[6rem] font-serif text-[#FAFAFA] mb-6 tracking-tighter mix-blend-difference group-hover:text-[#C19B6C] transition-colors duration-700">
+                                    {metric.val}
+                                </div>
+                                <div className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-[#FAFAFA] font-medium mb-3">
+                                    {metric.label}
+                                </div>
+                                <div className="text-sm text-[#555555] font-serif italic text-center px-4">
+                                    {metric.sub}
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
                 </motion.div>
 
             </div>
         </section>
     );
 }
+

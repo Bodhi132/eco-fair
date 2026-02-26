@@ -43,16 +43,16 @@ export default function EcoFairPage() {
     }, []);
 
     return (
-        <main className="min-h-screen bg-[#E8E2D2] font-sans text-[#1A362D] selection:bg-[#D15C42] selection:text-white">
+        <main className="min-h-screen bg-[#FAFAFA] font-sans text-[#0A0A0A] selection:bg-[#C19B6C] selection:text-white">
 
-            {/* Premium Retro Sticky Header */}
-            <header className={`fixed top-0 z-50 w-full transition-all duration-500 ${scrolled ? 'bg-[#F5F2EA]/95 backdrop-blur-md border-b-2 border-[#1A362D] py-6 shadow-[0px_4px_0px_0px_rgba(26,54,45,1)]' : 'bg-transparent py-6'}`}>
+            {/* Premium Glass Header */}
+            <header className={`fixed top-0 z-50 w-full transition-all duration-700 ${scrolled ? 'bg-[#FAFAFA]/90 backdrop-blur-xl border-b border-[#0A0A0A]/10 py-5 shadow-sm' : 'bg-transparent py-8'}`}>
                 <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                     {/* Empty div to push the button to the right using flex-between */}
                     <div></div>
 
                     <div>
-                        <a href="#contact-us" className="px-6 py-2 sm:px-8 sm:py-3 border-2 border-[#1A362D] text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-widest font-bold hover:bg-[#1A362D] hover:text-[#F5F2EA] transition-colors shadow-[4px_4px_0px_0px_rgba(209,92,66,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 cursor-pointer bg-[#F5F2EA]">
+                        <a href="#contact-us" className="px-6 py-2 sm:px-8 sm:py-3 border border-[#0A0A0A] text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-widest font-medium hover:bg-[#0A0A0A] hover:text-[#FAFAFA] transition-all duration-500 cursor-pointer bg-transparent">
                             Join Waitlist
                         </a>
                     </div>
@@ -67,34 +67,30 @@ export default function EcoFairPage() {
             <ExhibitionLayoutSection />
             <ContactUsSection />
 
-            {/* Premium Retro Footer */}
-            <footer className="bg-[#1A362D] pt-24 pb-12 px-6 border-t-4 border-[#DDA76A] relative overflow-hidden">
-
-                {/* Abstract footprint texture */}
-                <div className="absolute inset-0 z-0 opacity-10 mix-blend-color-burn bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPjxmaWx0ZXIgaWQ9J24nPjxmZVR1cmJ1bGVuY2UgdHlwZT0nZnJhY3RhbE5vaXNlJyBiYXNlRnJlcXVlbmN5PScwLjknIG51bU9jdGF2ZXM9JzMnLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHY9JzAuMScvPjwvc3ZnPg==')]"></div>
+            {/* Premium Modern Footer */}
+            <footer className="bg-[#0A0A0A] pt-32 pb-16 px-6 relative overflow-hidden">
 
                 <div className="max-w-7xl mx-auto relative z-10">
 
                     {/* Top Footer Section with Pexels Image */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20 border-b-2 border-[#2A4D42] pb-16">
-                        <div className="relative h-[300px] w-full lg:w-3/4 rounded-t-full rounded-bl-full overflow-hidden border-4 border-[#E8E2D2] shadow-[12px_12px_0px_0px_rgba(209,92,66,1)]">
-                            <div className="absolute inset-0 bg-[#1A362D] mix-blend-multiply opacity-20 z-10 hover:opacity-0 transition-opacity duration-700"></div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24 border-b border-[#2A2A2A] pb-24">
+                        <div className="relative h-[400px] w-full lg:w-3/4 rounded-full overflow-hidden">
                             <Image
-                                src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="Premium menswear fashion"
+                                src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="Premium fashion exhibition"
                                 fill
-                                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                className="object-cover opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-[1.5s] ease-[0.25,1,0.5,1]"
                             />
                         </div>
 
                         <div>
-                            <h4 className="font-serif text-5xl md:text-6xl text-[#F5F2EA] tracking-tighter mb-6">
-                                Experience The <br /><span className="italic text-[#DDA76A]">Exception.</span>
+                            <h4 className="font-serif text-5xl md:text-7xl text-[#FAFAFA] tracking-tight mb-8 leading-[1.1]">
+                                Experience The <br /><span className="italic text-[#C19B6C] font-light">Exception.</span>
                             </h4>
-                            <p className="text-[#E8E2D2]/70 font-medium mb-8 max-w-sm">
+                            <p className="text-[#D1D1D1] font-light mb-10 max-w-sm text-lg leading-relaxed">
                                 Curation is our foundation. Only the most ambitious, sustainable, and high-quality brands make the cut.
                             </p>
-                            <a href="#contact-us" className="inline-block border-b-2 border-[#D15C42] text-[#E8E2D2] font-bold uppercase tracking-widest pb-1 hover:text-[#D15C42] transition-colors cursor-pointer">
+                            <a href="#contact-us" className="inline-block border-b border-[#C19B6C] text-[#FAFAFA] text-sm uppercase tracking-[0.2em] pb-2 hover:text-[#C19B6C] transition-colors duration-500 cursor-pointer">
                                 Submit Portfolio
                             </a>
                         </div>
@@ -103,27 +99,24 @@ export default function EcoFairPage() {
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
                         <div>
                             <div className="flex items-center mb-4">
-                                <div className="w-8 h-8 border border-[#E8E2D2] flex items-center justify-center bg-[#DDA76A] mr-3">
-                                    <span className="font-serif font-black text-[#1A362D] text-sm">E</span>
-                                </div>
-                                <div className="text-2xl font-serif font-bold tracking-tighter text-[#F5F2EA]">
-                                    ECO <span className="italic font-light text-[#D15C42]">FAIR</span>
+                                <div className="text-3xl font-serif tracking-tight text-[#FAFAFA]">
+                                    ECO <span className="italic font-light text-[#C19B6C]">FAIR</span>
                                 </div>
                             </div>
-                            <p className="text-[#E8E2D2]/60 font-medium text-sm">Elite Lifestyle Exhibition. Edition 1.0.</p>
+                            <p className="text-[#D1D1D1] font-light text-sm">Elite Lifestyle Exhibition. Edition 1.0.</p>
                         </div>
 
-                        <div className="flex space-x-4">
-                            {['Ig', 'Fb', 'Li', 'X'].map((social, i) => (
-                                <div key={social} className="w-12 h-12 border-2 border-[#2A4D42] rounded-full flex items-center justify-center text-[#E8E2D2] font-serif font-bold hover:bg-[#D15C42] hover:border-[#D15C42] hover:text-white transition-colors cursor-pointer shadow-[2px_2px_0px_0px_rgba(209,92,66,0.5)]">
+                        <div className="flex space-x-6">
+                            {['Instagram', 'Facebook', 'LinkedIn', 'Twitter'].map((social, i) => (
+                                <div key={social} className="text-[#D1D1D1] text-sm uppercase tracking-widest hover:text-[#C19B6C] transition-colors duration-300 cursor-pointer">
                                     {social}
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    <div className="mt-16 text-center text-xs uppercase tracking-[0.2em] text-[#2A4D42] font-bold">
-                        &copy; {new Date().getFullYear()} Eco Fair Pune. All Rights Reserved.
+                    <div className="mt-20 text-center text-xs uppercase tracking-[0.2em] text-[#555555]">
+                        &copy; {new Date().getFullYear()} Eco Fair. Uncompromising Luxury.
                     </div>
 
                 </div>
