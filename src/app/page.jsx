@@ -106,9 +106,9 @@ export default function EcoFairPage() {
                             <p className="text-[#D1D1D1] font-light text-sm">Elite Lifestyle Exhibition. Edition 1.0.</p>
                         </div>
 
-                        <div className="flex space-x-6">
+                        <div className="flex space-x-2 md:space-x-6">
                             {['Instagram', 'Facebook', 'LinkedIn', 'Twitter'].map((social, i) => (
-                                <div key={social} className="text-[#D1D1D1] text-sm uppercase tracking-widest hover:text-[#C19B6C] transition-colors duration-300 cursor-pointer">
+                                <div key={social} className="text-[#D1D1D1] text-xs md:text-sm uppercase tracking-widest hover:text-[#C19B6C] transition-colors duration-300 cursor-pointer">
                                     {social}
                                 </div>
                             ))}
