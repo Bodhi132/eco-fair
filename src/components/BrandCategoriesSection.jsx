@@ -12,7 +12,7 @@ const categories = [
     {
         name: "Fine Jewellery",
         desc: "Explore masterfully crafted pieces featuring ethically sourced precious stones and recycled metals, designed for the conscious collector.",
-        image: "https://images.pexels.com/photos/5690403/pexels-photo-5690403.jpeg?auto=compress&cs=tinysrgb&w=800&q=80"
+        image: "https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=800&q=80"
     },
     {
         name: "Bespoke Accessories",
